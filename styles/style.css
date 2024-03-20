@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fugaz One", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dedaec;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    max-width: 700px;
+    gap: 15px;
+}
+
+.card {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card_front, .card_back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    box-shadow: 7px 7px 7px darkgray;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.card_front {
+    background-color: #3d0a49;
+    transform: rotateY(180deg);
+}
+
+.card_back {
+    background-color: #027fe9;
+}
+
+#gameover {
+    background-color: #3d0a49d3;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #e0daf7;
+    font-size: 35px;
+    display: none;
+    top: 0;
+}
+
+#restart {
+    padding: 15px;
+    font-family: "Fugaz One", sans-serif;
+    font-size: 20px;
+    background-color: #00caf8;
+    border-style: none;
+    border-radius: 10px;
+    color: #1c0222;
+}

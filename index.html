@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <title>Jogo da Memória</title>
+</head>
+
+<body>
+
+    <div id="gameBoard">
+
+        <div id="1" class="card" data-icon="bootstrap">
+
+            <div class="card_front">
+                <img src="./images/bootstrap.png" alt="bootstrap">
+            </div>
+            <div class="card_back">
+                <img src="./images/question-sign.png" alt="?">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="gameover">
+        Parabéns, você concluiu o jogo!!!
+        <button id="restart" onclick="restart()">Jogue novamente</button>
+    </div>
+
+
+</body>
+
+</html>
