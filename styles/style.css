@@ -53,9 +53,8 @@ body {
     background-color: #027fe9;
 }
 
-#gameover {
+#gameOver {
     background-color: #3d0a49d3;
-    display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
